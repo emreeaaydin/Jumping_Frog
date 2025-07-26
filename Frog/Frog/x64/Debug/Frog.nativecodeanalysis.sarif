@@ -1,0 +1,759 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6054",
+          "message": {
+            "text": "String 'key' might not be zero-terminated."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                },
+                "region": {
+                  "startLine": 128,
+                  "startColumn": 17,
+                  "endLine": 128,
+                  "endColumn": 41
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "loadConfig",
+                  "decoratedName": "?loadConfig@@YAXPEBDPEAUConfig@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                          },
+                          "region": {
+                            "startLine": 118,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                          },
+                          "region": {
+                            "startLine": 119,
+                            "startColumn": 39
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                          },
+                          "region": {
+                            "startLine": 124,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                          },
+                          "region": {
+                            "startLine": 125,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                          },
+                          "region": {
+                            "startLine": 126,
+                            "startColumn": 14
+                          }
+                        },
+                        "message": {
+                          "text": "This expression may not zero-terminate 'key'"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                          },
+                          "region": {
+                            "startLine": 126,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                          },
+                          "region": {
+                            "startLine": 127,
+                            "startColumn": 104
+                          }
+                        },
+                        "message": {
+                          "text": "'key' is an Output from 'sscanf_s' (declared at c:\\program files (x86)\\windows kits\\10\\include\\10.0.22621.0\\ucrt\\stdio.h:2279)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                          },
+                          "region": {
+                            "startLine": 127,
+                            "startColumn": 104
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume '<branch condition>')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                          },
+                          "region": {
+                            "startLine": 128,
+                            "startColumn": 38
+                          }
+                        },
+                        "message": {
+                          "text": "'key' is an Input to 'strcmp' (declared at c:\\program files (x86)\\windows kits\\10\\include\\10.0.22621.0\\ucrt\\string.h:100)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                          },
+                          "region": {
+                            "startLine": 128,
+                            "startColumn": 38
+                          }
+                        },
+                        "message": {
+                          "text": "'key' is required to be zero-terminated by a SAL annotation on 'strcmp'"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6054",
+          "message": {
+            "text": "String 'value' might not be zero-terminated."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                },
+                "region": {
+                  "startLine": 143,
+                  "startColumn": 67,
+                  "endLine": 143,
+                  "endColumn": 106
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "loadConfig",
+                  "decoratedName": "?loadConfig@@YAXPEBDPEAUConfig@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                          },
+                          "region": {
+                            "startLine": 118,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                          },
+                          "region": {
+                            "startLine": 119,
+                            "startColumn": 39
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                          },
+                          "region": {
+                            "startLine": 124,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                          },
+                          "region": {
+                            "startLine": 125,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                          },
+                          "region": {
+                            "startLine": 126,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                          },
+                          "region": {
+                            "startLine": 126,
+                            "startColumn": 23
+                          }
+                        },
+                        "message": {
+                          "text": "This expression may not zero-terminate 'value'"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                          },
+                          "region": {
+                            "startLine": 127,
+                            "startColumn": 104
+                          }
+                        },
+                        "message": {
+                          "text": "'value' is an Output from 'sscanf_s' (declared at c:\\program files (x86)\\windows kits\\10\\include\\10.0.22621.0\\ucrt\\stdio.h:2279)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                          },
+                          "region": {
+                            "startLine": 127,
+                            "startColumn": 104
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume '<branch condition>')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                          },
+                          "region": {
+                            "startLine": 128,
+                            "startColumn": 38
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'strcmp(key, \"WIDTH\")==0' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                          },
+                          "region": {
+                            "startLine": 129,
+                            "startColumn": 44
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'strcmp(key, \"HEIGHT\")==0' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                          },
+                          "region": {
+                            "startLine": 130,
+                            "startColumn": 47
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'strcmp(key, \"CAR_COUNT\")==0' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                          },
+                          "region": {
+                            "startLine": 131,
+                            "startColumn": 48
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'strcmp(key, \"TOTAL_TIME\")==0' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                          },
+                          "region": {
+                            "startLine": 132,
+                            "startColumn": 47
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'strcmp(key, \"MAX_SPEED\")==0' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                          },
+                          "region": {
+                            "startLine": 133,
+                            "startColumn": 52
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                          },
+                          "region": {
+                            "startLine": 134,
+                            "startColumn": 41
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'strcmp(key, \"CAR\")==0' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                          },
+                          "region": {
+                            "startLine": 135,
+                            "startColumn": 42
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'strcmp(key, \"FROG\")==0' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                          },
+                          "region": {
+                            "startLine": 136,
+                            "startColumn": 42
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'strcmp(key, \"GOAL\")==0' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                          },
+                          "region": {
+                            "startLine": 137,
+                            "startColumn": 46
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'strcmp(key, \"OBSTACLE\")==0' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                          },
+                          "region": {
+                            "startLine": 138,
+                            "startColumn": 48
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'strcmp(key, \"FROG_COLOR\")==0' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                          },
+                          "region": {
+                            "startLine": 139,
+                            "startColumn": 47
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'strcmp(key, \"CAR_COLOR\")==0' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                          },
+                          "region": {
+                            "startLine": 140,
+                            "startColumn": 48
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'strcmp(key, \"GOAL_COLOR\")==0' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                          },
+                          "region": {
+                            "startLine": 141,
+                            "startColumn": 52
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                          },
+                          "region": {
+                            "startLine": 142,
+                            "startColumn": 49
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'strcmp(key, \"RANDOM_SEED\")==0' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                          },
+                          "region": {
+                            "startLine": 143,
+                            "startColumn": 61
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume '<branch condition>')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                          },
+                          "region": {
+                            "startLine": 143,
+                            "startColumn": 99
+                          }
+                        },
+                        "message": {
+                          "text": "'value' is an Input to 'atoi' (declared at c:\\program files (x86)\\windows kits\\10\\include\\10.0.22621.0\\ucrt\\stdlib.h:451)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+                          },
+                          "region": {
+                            "startLine": 143,
+                            "startColumn": 99
+                          }
+                        },
+                        "message": {
+                          "text": "'value' is required to be zero-terminated by a SAL annotation on 'atoi'"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.41.34123.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/tayfun/Downloads/wetransfer_frog_2024-12-01_0502/Frog/Frog/Frog.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "b4a5c3291c07783a1fab7e5e541f3a03b3a5625ac63ff7c00abbedcd787f22fd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/dev/vcpkg/installed/x64-windows/include/curses.h"
+          },
+          "hashes": {
+            "sha-256": "ef3f1e8a9fc941b267eb8c02f89ab609aae6ba5a763fb3fe7d699ca7046ff98e"
+          }
+        }
+      ]
+    }
+  ]
+}
